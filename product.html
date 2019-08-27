@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>景点详情</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/lipis/css/flag-icon.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./lib/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/foot.css">
+</head>
+<body>
+<div id="app">
+    <!--header-->
+    <header class="header-fixed">
+        <div class="header-logo">
+            <a href="/">客路</a>
+        </div>
+        <div class="header-search">
+            <input type="text" placeholder="搜索全球目的地 / 活动">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="header-right">
+            <ul class="header-menu">
+                <li>
+                    <a href="#">
+                    <span class="flag-icon flag-icon-cn">
+                    </span>
+                        <i class="fa fa-angle-down "></i>
+                    </a>
+                    <div class="country-items">
+                        <ul>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-AU">
+                                    <i class="flag-icon flag-icon-au"></i>
+                                    <span>English (Australia)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-ca"></i>
+                                    <span>English (Canada)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-hk"></i>
+                                    <span>English (Hong Kong)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-in"></i>
+                                    <span>English (India)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-my"></i>
+                                    <span>English (Malaysia)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-nz"></i>
+                                    <span>English (New Zealand)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-ph"></i>
+                                    <span>English (Philippines)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-si"></i>
+                                    <span>English (Singapore)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-us"></i>
+                                    <span>English (US)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-uk"></i>
+                                    <span>English (UK)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-it"></i>
+                                    <span>English (International)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-cn"></i>
+                                    <span>简体中文</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-hk"></i>
+                                    <span>繁體中文 (香港)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-tw"></i>
+                                    <span>繁體中文 (台灣)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-jp"></i>
+                                    <span>日本語</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-kr"></i>
+                                    <span>한국어</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-th"></i>
+                                    <span>ไทย</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-vn"></i>
+                                    <span>Tiếng Việt</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-id"></i>
+                                    <span>Bahasa Indonesia</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <span>选择语言</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">CNY
+                        <i class="fa fa-angle-down "></i>
+                    </a>
+                    <div class="head-moneys">
+                        <div class="moneys-t">
+                            <ul class="money-items">
+                                <li><a href="#"><span class="gray">CNY</span>人民币</a></li>
+                                <li><a href="#"><span class="gray">HKD</span> 港币</a></li>
+                                <li><a href="#"><span class="gray">MYR</span> 林吉特</a></li>
+                                <li><a href="#"><span class="gray">TWD</span> 台币</a></li>
+                                <li><a href="#"><span class="gray">SGD</span> 新币</a></li>
+                                <li><a href="#"><span class="gray">USD</span> 美元</a></li>
+                                <li><a href="#"><span class="gray">KRW</span> 韩元</a></li>
+                            </ul>
+                            <span>推荐使用货币</span>
+                        </div>
+                        <div class="moneys-b">
+                            <ul class="money-items">
+                                <li><a href="#"><span class="gray">AED</span> 阿联酋迪拉姆</a></li>
+                                <li><a href="#"><span class="gray">AUD</span> 澳元</a></li>
+                                <li><a href="#"><span class="gray">CAD</span> 加拿大元</a></li>
+                                <li><a href="#"><span class="gray">CHF</span> 瑞士法郎</a></li>
+                                <li><a href="#"><span class="gray">DKK</span> 丹麦克朗</a></li>
+                                <li><a href="#"><span class="gray">EGP</span> 埃及镑</a></li>
+                                <li><a href="#"><span class="gray">EUR</span> 欧元</a></li>
+                                <li><a href="#"><span class="gray">FJD</span> 斐济元</a></li>
+                                <li><a href="#"><span class="gray">GBP</span> 英镑</a></li>
+                                <li><a href="#"><span class="gray">IDR</span> 印尼盾</a></li>
+                                <li><a href="#"><span class="gray">INR</span> 印度卢比</a></li>
+                                <li><a href="#"><span class="gray">ISK</span> 冰岛克朗</a></li>
+                                <li><a href="#"><span class="gray">JOD</span> 约旦第纳尔</a></li>
+                                <li><a href="#"><span class="gray">JPY</span> 日元</a></li>
+                                <li><a href="#"><span class="gray">KHR</span> 瑞尔</a></li>
+                                <li><a href="#"><span class="gray">LAK</span> 老挝基普</a></li>
+                                <li><a href="#"><span class="gray">LBP</span> 黎巴嫩镑</a></li>
+                                <li><a href="#"><span class="gray">MAD</span> 摩洛哥迪拉姆</a></li>
+                                <li><a href="#" class="moneys-b-t"><span class="gray">MGA</span> 马达加斯加阿里亚里</a></li>
+                                <li><a href="#"><span class="gray">MMK</span> 缅元</a></li>
+                                <li><a href="#"><span class="gray">MOP</span> 澳门元</a></li>
+                                <li><a href="#"><span class="gray">MUR</span> 毛里求斯卢比</a></li>
+                                <li><a href="#"><span class="gray">MXN</span> 墨西哥比索</a></li>
+                                <li><a href="#"><span class="gray">NOK</span> 挪威克朗</a></li>
+                                <li><a href="#"><span class="gray">NZD</span> 新西兰元</a></li>
+                                <li><a href="#"><span class="gray">OMR</span> 阿曼里亚尔</a></li>
+                                <li><a href="#"><span class="gray">PHP</span> 菲律宾比索</a></li>
+                                <li><a href="#"><span class="gray">QAR</span> 卡塔尔里亚尔</a></li>
+                                <li><a href="#"><span class="gray">RUB</span> 俄罗斯卢布</a></li>
+                                <li><a href="#"><span class="gray">SEK</span> 瑞典克朗</a></li>
+                                <li><a href="#"><span class="gray">THB</span> 泰铢</a></li>
+                                <li><a href="#"><span class="gray">TRY</span> 新土耳其里拉</a></li>
+                                <li><a href="#"><span class="gray">VND</span> 越南盾</a></li>
+                                <li><a href="#"><span class="gray">ZAR</span> 南非兰特</a></li>
+                            </ul>
+                            <span>其他货币</span>
+                        </div>
+
+                    </div>
+                </li>
+                <li><a href="#">APP下载</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">最近浏览<i class="fa fa-angle-down "></i></a>
+                    <div class="head-history">
+                        <ul>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                        </ul>
+
+                    </div>
+                    <i class="history-arrow"></i>
+                </li>
+                <li><a href="#">
+                    <em class="fa fa-shopping-cart"></em>
+                </a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--    banner-->
+    <div class="product-banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" @mouseenter="getMouseEnter" @mouseleave="getMouseLeave"></div>
+                <div class="swiper-slide" @mouseenter="getMouseEnter" @mouseleave="getMouseLeave"
+                     style="background-image: url('./images/product2.jpg')"></div>
+                <div class="swiper-slide" @mouseenter="getMouseEnter" @mouseleave="getMouseLeave">Slide 3</div>
+                <div class="swiper-slide" @mouseenter="getMouseEnter" @mouseleave="getMouseLeave">Slide 4</div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="layout-container">
+        <div class="product-body">
+            <div class="product-body-title">
+                <a href="./index.html">首页</a>&nbsp;&nbsp;<i></i> &nbsp;&nbsp;<a href="./taibei.html">台北</a> <i></i>&nbsp;&nbsp;迷客夏
+                -
+                台湾
+            </div>
+            <h1>迷客夏 - 台湾</h1>
+            <p class="product-comment-num">
+                <span>★&nbsp;&nbsp;4.8 </span>(10,027条评价) 79K 人参加过
+            </p>
+            <ul class="product-body-intro">
+                <li><i class="fa fa-dollar"></i><span>不支持退改</span></li>
+                <li><i class="fa fa-print"></i><span>可出示手机电子凭证或打印凭证</span></li>
+                <li><i class="fa fa-calendar"></i><span>仅限指定日期使用</span></li>
+                <li><i class="fa fa-support"></i><span>英文 / 普通话</span></li>
+                <li><i class="fa fa-users"></i><span>最少1人起订</span></li>
+            </ul>
+            <ul class="product-describe-info">
+                <li>到台北101观景台体验超高速电梯，仅37秒即可直达89楼室内观景台</li>
+                <li>免排队现货新鲜供应：机场快速提货，原味、蔓越莓、凤黄酥等多种凤梨酥口味一次购足</li>
+                <li>奶蛋素，皮薄馅多不黏牙，夹藏着口感细致的凤梨美味，闻名海内外的精致茗点</li>
+                <li>旅游时光怎能少了美食作伴！探索台北必吃美食：阿宗面线、卤肉饭、麻辣火锅，到台北必吃查看更多推荐</li>
+            </ul>
+            <div class="product-categorys">
+                <h2 class="product-title">套餐选项</h2>
+                <div class="product-category">
+                    <h3>请选择日期、预订选项</h3>
+                    <p class="product-select-time">请选择领取日期</p>
+                    <div class="product-time-picker">
+                        <el-date-picker
+                                v-model="value1"
+                                type="date"
+                                :picker-options="pickerOptions1"
+                                placeholder="选择日期">
+                        </el-date-picker>
+                    </div>
+                    <p class="product-category-type">数量</p>
+                    <div class="product-category-name">
+                        <span>每人</span>
+                        <div>
+                            <span class="oldPrice">￥ 135</span>
+                            <span class="newPrice">￥ {{productPrice}}</span>
+                            <el-input-number v-model="productNum" @change="handleChange" :min="0"
+                                             label="描述文字"></el-input-number>
+                        </div>
+                    </div>
+
+                    <div class="product-category-info" v-show="productCount">
+                        <p>费用详情</p>
+                        <div class="product-category-info1">
+                            <div class="product-category-info-price">
+                                <p>￥ {{productCount}}</p>
+                                <p>完成活动可获得40积分</p>
+                            </div>
+                            <div class="product-category-info-shop">
+                                <a href="#">加入购物车</a>
+                                <a href="#">立即预订</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <h2 class="product-title">最新评价</h2>
+            <div class="product-eval">
+                <div class="product-eval-item">
+                    <p class="product-eval-item-title"><i>Lai Kam <span>★ ★ ★ ★ ★</span></i><i>2019年8月17日</i></p>
+                    <p class="product-eval-combo">评价套餐： 6个入盒装（原味凤梨酥）10盒以上</p>
+                    <h5>很方便！很方便！很方便！很方便！很方便！很方便！很方便！</h5>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <img src="./images/product3.jpg" alt="">
+                </div>
+                <a href="#">查看2,309条评价</a>
+            </div>
+            <h2 class="product-title">活动概览</h2>
+            <div class="product-huodong">
+                <p>
+                    台湾最经典的伴手礼，非凤梨酥莫属，而最实惠的凤梨酥伴手礼当属佳德，佳德凤梨酥在台湾人心中地位很高，钟情于传统原味凤梨酥的你，
+                    选择佳德最适合不过，凤梨酥本身有股淡淡的奶香，饼皮松软但又扎扎实实，香酥美味，不会粉粉的，它的内陷是微甜的冬瓜内馅，甜而不腻，
+                    浓郁丰富的口感令人难以抗拒，难以忘怀！最重要是它只可以在台湾买到，美好的味觉是旅行的记忆，机场取货让你轻松把多种美味带回家自用、送礼两相宜。
+                </p>
+                <img src="./images/product4.jpg" alt="">
+                <img src="./images/product4.jpg" alt="">
+                <img src="./images/product4.jpg" alt="">
+                <img src="./images/product4.jpg" alt="">
+                <img src="./images/product4.jpg" alt="">
+
+            </div>
+            <h2 class="product-title">预订详情</h2>
+            <div class="product-book">
+                <h4 class="product-title-4">确认详情：</h4>
+                <ul>
+                    <li>客路会在预订成功后的1个工作日内确认，并将使用凭证发送至你的电子邮箱</li>
+                    <li>如在注明的时限内还没收到邮件，或须查看垃圾邮件箱</li>
+                </ul>
+                <h4 class="product-title-4">商品规格：</h4>
+                <ul>
+                    <li>重量：400g / 6入装，740g / 12入装</li>
+                    <li>盒装尺寸：21×29×5cm（6入装），10×29×5cm（12入装）</li>
+                </ul>
+                <h4 class="product-title-4">商品规格：</h4>
+                <ul>
+                    <li>重量：400g / 6入装，740g / 12入装</li>
+                    <li>盒装尺寸：21×29×5cm（6入装），10×29×5cm（12入装）</li>
+                </ul>
+                <h4 class="product-title-4">商品规格：</h4>
+                <ul>
+                    <li>重量：400g / 6入装，740g / 12入装</li>
+                    <li>盒装尺寸：21×29×5cm（6入装），10×29×5cm（12入装）</li>
+                </ul>
+                <h4 class="product-title-4">商品规格：</h4>
+                <ul>
+                    <li>重量：400g / 6入装，740g / 12入装</li>
+                    <li>盒装尺寸：21×29×5cm（6入装），10×29×5cm（12入装）</li>
+                </ul>
+                <div class="product-book-hint">
+                    <h4 class="product-title-4">注意事项：</h4>
+                    <ul>
+                        <li>购买6个入盒装1-9盒、12个入盒装1-4盒需另付运费NTD100，购买6个入盒装10盒以上、12个入盒装5盒以上免运费</li>
+                        <li>请于支付页面选择欲取货的机场／航厦，并估计取货时间</li>
+                        <li>订购商品均会被妥善装箱，可直接于机场轻松领取</li>
+                        <li>商品为食品，如非运送过程失温导致食品变质者，恕无法退换货，敬请见谅与配合。除商品本身有瑕疵可办理退货，商品一经使用或损毁即不可退货，退货必须保留纸箱，及商品组合之齐全及完整性</li>
+                        <li>
+                            购买前，请务必先了解此伴手礼是否可携入欲前往国家，本商品仅提供伴手礼与机场领取服务
+                        </li>
+                        <li>请注意：台北松山机场的领取时间截止到当天10:00 PM，预订时请注意领取的截止时间</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <h2 class="product-title">如何使用</h2>
+            <div class="product-use ">
+                <ul>
+                    <li>参与活动时须出示打印出的使用凭证，或可出示手机上的电子使用凭证</li>
+                    <li>此使用凭证只适用于已获确认的日期及时间</li>
+                </ul>
+                <h4 class="product-title-4">领取地点：</h4>
+                <ul>
+                    <li>供应商将于取货日1-2天前透过Klook凭证与短信上通知详细的取货资讯，请务必保持手机畅通</li>
+                </ul>
+                <h4 class="product-title-4">桃园机场</h4>
+                <ul>
+                    <li>供应商将于取货日1-2天前透过Klook凭证与短信上通知详细的取货资讯，请务必保持手机畅通</li>
+                    <li>供应商将于取货日1-2天前透过Klook凭证与短信上通知详细的取货资讯，请务必保持手机畅通</li>
+                    <li>供应商将于取货日1-2天前透过Klook凭证与短信上通知详细的取货资讯，请务必保持手机畅通</li>
+                </ul>
+                <h4 class="product-title-4">桃园机场</h4>
+                <ul>
+                    <li>供应商将于取货日1-2天前透过Klook凭证与短信上通知详细的取货资讯，请务必保持手机畅通</li>
+                    <li>供应商将于取货日1-2天前透过Klook凭证与短信上通知详细的取货资讯，请务必保持手机畅通</li>
+                </ul>
+                <div class="product-usage_imgs">
+                    <div class="product-usage_image">
+                        <div class="product-image-left">
+                            <el-image
+                                    style="width: 195px; height: 130px"
+                                    :src="url"
+                                    :preview-src-list="srcList">
+                            </el-image>
+                        </div>
+                        <div class="product-image-right">
+                            桃园国际机场（TPE）领取地点（第一航站楼）
+                        </div>
+
+
+                    </div>
+                    <div class="product-usage_image">
+                        <div class="product-image-left">
+                            <el-image
+                                    style="width: 195px; height: 130px"
+                                    :src="url"
+                                    :preview-src-list="srcList">
+                            </el-image>
+                        </div>
+                        <div class="product-image-right">
+                            桃园国际机场（TPE）领取地点（第一航站楼）
+                        </div>
+                    </div>
+                    <div class="product-usage_image">
+                        <div class="product-image-left">
+                            <el-image
+                                    style="width: 195px; height: 130px"
+                                    :src="url"
+                                    :preview-src-list="srcList">
+                            </el-image>
+                        </div>
+                        <div class="product-image-right">
+                            桃园国际机场（TPE）领取地点（第一航站楼）
+                        </div>
+                    </div>
+                    <div class="product-big_image">
+                        <el-image
+                                style="width: 790px; height: 316px"
+                                :src="url"
+                                :preview-src-list="srcList">
+                        </el-image>
+                    </div>
+
+                </div>
+                <h2 class="product-title">退改详情</h2>
+                <div class="product-back">
+                    <ul>
+                        <li>此活动不受理订单修改、订单取消或退款</li>
+                    </ul>
+                </div>
+                <div class="product-grade">
+                    <h2 class="product-title">活动评价 ( 2,309 ) </h2>
+                    <div class="product-grade-start">
+                        <span>★★★★★</span>
+                        <span class="start-color" style="width: 90%;">★★★★★</span>
+                        <i>4.8</i>
+                    </div>
+                </div>
+                <div class="product-eval">
+                    <div class="product-eval-item">
+                        <p class="product-eval-item-title"><i>Lai Kam <span>★ ★ ★ ★ ★</span></i><i>2019年8月17日</i></p>
+                        <p class="product-eval-combo">评价套餐： 6个入盒装（原味凤梨酥）10盒以上</p>
+                        <h5>很方便！很方便！很方便！很方便！很方便！很方便！很方便！</h5>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <img src="./images/product3.jpg" alt="">
+                    </div>
+                    <a href="#" class="product-lick"><i class="fa fa-thumbs-o-up"></i>有帮助</a>
+                </div>
+
+                <div class="product-eval product-eval-items" v-for="item in evalList" :key="item.id">
+                    <div class="product-eval-item">
+                        <p class="product-eval-item-title"><i>Lai Kam <span>★ ★ ★ ★ ★</span></i><i>2019年8月17日</i></p>
+                        <p class="product-eval-combo">评价套餐： 6个入盒装（原味凤梨酥）10盒以上</p>
+                        <h5>很方便！很方便！很方便！很方便！很方便！很方便！很方便！</h5>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <img src="./images/product3.jpg" alt="">
+                    </div>
+                    <a href="#" class="product-lick"><i class="fa fa-thumbs-o-up"></i>有帮助</a>
+                </div>
+                <div class="product-pagination">
+                    <el-pagination
+                            @size-change="handleSizeChange"
+                            @current-change="handleCurrentChange"
+                            :current-page="currentPage"
+                            :page-sizes="[100, 200, 300, 400]"
+                            :page-size="100"
+                            layout="total, sizes, prev, pager, next, jumper"
+                            :total="400">
+                    </el-pagination>
+                </div>
+                <h2 class="product-title">常见问题</h2>
+                <div class="product-question">
+                    <h4>活动相关常见问题</h4>
+                    <p class="product-q">Q: 请问 台北101观景台可以持KLOOK客路发给我的电子票直接入场吗？</p>
+                    <p class="product-a">A: 此票需要兑换实体票方可入场哦，请至五楼售票处网路预购票柜檯出示电子凭证或打印出的电子凭证领取实体票券。</p>
+                    <p class="product-q">Q: 请问 台北101观景台可以持KLOOK客路发给我的电子票直接入场吗？</p>
+                    <p class="product-a">A: 此票需要兑换实体票方可入场哦，请至五楼售票处网路预购票柜檯出示电子凭证或打印出的电子凭证领取实体票券。</p>
+                    <a href="#" class="product-help">KLOOK帮助中心</a>
+                </div>
+
+            </div>
+
+        </div>
+        <h2 class="product-title">你可能还会喜欢</h2>
+        <div class="product-lick">
+            <ul>
+                <li class="theme-body-product" v-for="item in likeList" :key="item.id">
+                    <a href="#">
+                        <div class="theme-body-img">
+                            <i class="fa fa-map-marker"></i>
+                            宿雾
+                            <span>19% OFF</span>
+                        </div>
+                        <div class="them-body-descr">
+                            <h3>【优惠】奥斯洛鲸鲨共游（宿雾市或麦克坦岛出发）</h3>
+                            <p class="lk-grade"><span>★  4.8 &nbsp;&nbsp;</span>(6,978条评价) | 142K 人参加过</p>
+                            <div>
+                                <p class="active-old">￥ 489</p>
+                                <p class="active-new">￥ 394 <i class="fa fa-flash"></i> <span>最早可预订日期：明日</span></p>
+                            </div>
+                            <i class="theme-body-hot">
+                                <span> 热门</span>
+                            </i>
+                        </div>
+
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    <!--    购物车-->
+    <div class="product-shopping fixed" v-show="productCount">
+        <div class="lk-layout">
+            <div class="product-category-info">
+                <div class="product-category-info1">
+                    <div class="product-category-info-price">
+                        <p>￥ {{productCount}}</p>
+                        <p>完成活动可获得40积分</p>
+                    </div>
+                    <div class="product-category-info-shop">
+                        <a href="#">加入购物车</a>
+                        <a href="#">立即预订</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="lk-layout">
+            <div class="foot-a">
+
+                <div>
+                    友情链接: <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i> <i class="fa fa-weixin"></i><i
+                        class="fa fa-youtube"></i>
+                </div>
+                <div class="foot-grid">
+                    <div>
+                        <span>最高可省60%，只有订阅用户才能享受到隐藏优惠</span>
+                        <p>点击「订阅」，即表示您同意我们的服务条款及隐私政策</p>
+                    </div>
+                    <div class="foot-search">
+                        <input type="text" placeholder="请输入邮箱以接收订阅信息">
+                        <a href="#">订阅</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="foot-border"></div>
+        <div class="lk-layout">
+            <div class="foot-b">
+                <p class="t12 copyright ">©2014-2019 Klook Travel Technology Limited. All Rights Reserved.<br>HK Travel
+                    Agent Licence: 354005.<br>SG
+                    Travel Agent Licence: 02851.<br>TW
+                    Travel Agent License: 甲
+                    03950.</p>
+                <ul>
+                    <li class="t_white">认识客路</li>
+                    <li><a href="/zh-CN/about/">关于客路</a></li>
+                    <li><a href="/zh-CN/partner/">合作伙伴</a></li>
+                    <li><a href="/zh-CN/careers/">加入我们</a></li>
+                </ul>
+                <ul>
+                    <li class="t_white">携手客路</li>
+                    <li><a href="https://merchant.klook.com/zh-CN/">商户登录</a></li>
+                    <li><a href="http://affiliate.klook.com/zh-CN/">联合营销</a></li>
+                    <li><a href="https://www.klook.com/zh-CN/agent/">同业交易</a></li>
+                </ul>
+                <ul>
+                    <li class="t_white">网站条款</li>
+                    <li><a href="/zh-CN/conditions/">使用条款</a></li>
+                    <li><a href="/zh-CN/policy/">隐私政策</a></li>
+                    <li><a href="/zh-CN/cookiepolicy/">Cookie政策</a></li>
+                </ul>
+                <div class="foot-paly">
+                    <a href="#">咨询客路</a>
+                    <h3>支付方式</h3>
+                    <p>
+                        <span class="i_alipay m_justify_list"></span>
+                        <span class="i_newMaster m_justify_list"></span>
+                        <span class="i_wechatpay m_justify_list"></span>
+                        <span class="i_newAE m_justify_list"></span>
+                        <span class="i_newVisa m_justify_list"></span>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="foot-border"></div>
+        <div class="lk-layout">
+            <div class="foot-c">
+                <p>
+                    粤ICP号备14100233号-1 地址：深圳市福田区天安科技创业园大厦A1002室 客服电话：400-194-9240
+                </p>
+            </div>
+        </div>
+
+    </footer>
+</div>
+<script src="./lib/swiper/js/swiper.min.js"></script>
+<script src="./js/vue.min.js"></script>
+<script src="./lib/element-ui/lib/index.js"></script>
+<script src="./js/vue-preview.min.js"></script>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            isHint: true,
+            swiperOne: null,
+            currentPage: 2,
+            productNum: 0,
+            productPrice: 122,
+            productCount: 0,
+            hotList: [
+                {id: 1},
+                {id: 2},
+                {id: 3},
+                {id: 4},
+                {id: 5},
+                {id: 6}
+            ],
+            evalList: [
+                {id: 1},
+                {id: 2},
+                {id: 3},
+                {id: 4},
+                {id: 5},
+                {id: 6}
+            ],
+            likeList: [
+                {id: 1},
+                {id: 2},
+                {id: 3}
+            ],
+            value1: '',
+            pickerOptions1: {
+                disabledDate(time) {
+                    return time.getTime() < Date.now() - 8.64e7;
+                },
+            },
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            srcList: [
+                'https://fuss10.elemecdn.com/8/27/f01c15bb73e1ef3793e64e6b7bbccjpeg.jpeg',
+                'https://fuss10.elemecdn.com/1/8e/aeffeb4de74e2fde4bd74fc7b4486jpeg.jpeg'
+            ]
+        },
+        methods: {
+            handleChange(val) {
+                this.productCount = this.productPrice * val
+            },
+            getMouseEnter() {
+                this.swiperOne.autoplay.stop()
+
+            },
+            getMouseLeave() {
+                this.swiperOne.autoplay.start()
+
+            },
+            handleSizeChange(val) {
+                console.log(`每页 ${val} 条`);
+            },
+            handleCurrentChange(val) {
+                console.log(`当前页: ${val}`);
+            }
+        },
+        mounted() {
+            this.swiperOne = new Swiper('.product-banner .swiper-container', {
+                loop: true,
+                autoplay: true,
+                navigation: {
+                    nextEl: '.product-banner .swiper-button-next',
+                    prevEl: '.product-banner .swiper-button-prev',
+                },
+                pagination: {
+                    el: '.product-banner .swiper-pagination',
+                },
+            });
+        }
+
+    })
+</script>
+</body>
+</html>

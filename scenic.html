@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>景点</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/lipis/css/flag-icon.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/city.css">
+    <link rel="stylesheet" href="./css/foot.css">
+    <link rel="stylesheet" href="./lib/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+<div id="app">
+
+
+    <!--header-->
+    <header class="header-fixed">
+        <div class="header-logo">
+            <a href="/">客路</a>
+        </div>
+        <div class="header-search">
+            <input type="text" placeholder="搜索全球目的地 / 活动">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="header-right">
+            <ul class="header-menu">
+                <li>
+                    <a href="#">
+                    <span class="flag-icon flag-icon-cn">
+                    </span>
+                        <i class="fa fa-angle-down "></i>
+                    </a>
+                    <div class="country-items">
+                        <ul>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-AU">
+                                    <i class="flag-icon flag-icon-au"></i>
+                                    <span>English (Australia)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-ca"></i>
+                                    <span>English (Canada)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-hk"></i>
+                                    <span>English (Hong Kong)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-in"></i>
+                                    <span>English (India)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-my"></i>
+                                    <span>English (Malaysia)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-nz"></i>
+                                    <span>English (New Zealand)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-ph"></i>
+                                    <span>English (Philippines)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-si"></i>
+                                    <span>English (Singapore)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-us"></i>
+                                    <span>English (US)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-uk"></i>
+                                    <span>English (UK)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-it"></i>
+                                    <span>English (International)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-cn"></i>
+                                    <span>简体中文</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-hk"></i>
+                                    <span>繁體中文 (香港)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-tw"></i>
+                                    <span>繁體中文 (台灣)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-jp"></i>
+                                    <span>日本語</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-kr"></i>
+                                    <span>한국어</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-th"></i>
+                                    <span>ไทย</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-vn"></i>
+                                    <span>Tiếng Việt</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-id"></i>
+                                    <span>Bahasa Indonesia</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <span>选择语言</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">CNY
+                        <i class="fa fa-angle-down "></i>
+                    </a>
+                    <div class="head-moneys">
+                        <div class="moneys-t">
+                            <ul class="money-items">
+                                <li><a href="#"><span class="gray">CNY</span>人民币</a></li>
+                                <li><a href="#"><span class="gray">HKD</span> 港币</a></li>
+                                <li><a href="#"><span class="gray">MYR</span> 林吉特</a></li>
+                                <li><a href="#"><span class="gray">TWD</span> 台币</a></li>
+                                <li><a href="#"><span class="gray">SGD</span> 新币</a></li>
+                                <li><a href="#"><span class="gray">USD</span> 美元</a></li>
+                                <li><a href="#"><span class="gray">KRW</span> 韩元</a></li>
+                            </ul>
+                            <span>推荐使用货币</span>
+                        </div>
+                        <div class="moneys-b">
+                            <ul class="money-items">
+                                <li><a href="#"><span class="gray">AED</span> 阿联酋迪拉姆</a></li>
+                                <li><a href="#"><span class="gray">AUD</span> 澳元</a></li>
+                                <li><a href="#"><span class="gray">CAD</span> 加拿大元</a></li>
+                                <li><a href="#"><span class="gray">CHF</span> 瑞士法郎</a></li>
+                                <li><a href="#"><span class="gray">DKK</span> 丹麦克朗</a></li>
+                                <li><a href="#"><span class="gray">EGP</span> 埃及镑</a></li>
+                                <li><a href="#"><span class="gray">EUR</span> 欧元</a></li>
+                                <li><a href="#"><span class="gray">FJD</span> 斐济元</a></li>
+                                <li><a href="#"><span class="gray">GBP</span> 英镑</a></li>
+                                <li><a href="#"><span class="gray">IDR</span> 印尼盾</a></li>
+                                <li><a href="#"><span class="gray">INR</span> 印度卢比</a></li>
+                                <li><a href="#"><span class="gray">ISK</span> 冰岛克朗</a></li>
+                                <li><a href="#"><span class="gray">JOD</span> 约旦第纳尔</a></li>
+                                <li><a href="#"><span class="gray">JPY</span> 日元</a></li>
+                                <li><a href="#"><span class="gray">KHR</span> 瑞尔</a></li>
+                                <li><a href="#"><span class="gray">LAK</span> 老挝基普</a></li>
+                                <li><a href="#"><span class="gray">LBP</span> 黎巴嫩镑</a></li>
+                                <li><a href="#"><span class="gray">MAD</span> 摩洛哥迪拉姆</a></li>
+                                <li><a href="#" class="moneys-b-t"><span class="gray">MGA</span> 马达加斯加阿里亚里</a></li>
+                                <li><a href="#"><span class="gray">MMK</span> 缅元</a></li>
+                                <li><a href="#"><span class="gray">MOP</span> 澳门元</a></li>
+                                <li><a href="#"><span class="gray">MUR</span> 毛里求斯卢比</a></li>
+                                <li><a href="#"><span class="gray">MXN</span> 墨西哥比索</a></li>
+                                <li><a href="#"><span class="gray">NOK</span> 挪威克朗</a></li>
+                                <li><a href="#"><span class="gray">NZD</span> 新西兰元</a></li>
+                                <li><a href="#"><span class="gray">OMR</span> 阿曼里亚尔</a></li>
+                                <li><a href="#"><span class="gray">PHP</span> 菲律宾比索</a></li>
+                                <li><a href="#"><span class="gray">QAR</span> 卡塔尔里亚尔</a></li>
+                                <li><a href="#"><span class="gray">RUB</span> 俄罗斯卢布</a></li>
+                                <li><a href="#"><span class="gray">SEK</span> 瑞典克朗</a></li>
+                                <li><a href="#"><span class="gray">THB</span> 泰铢</a></li>
+                                <li><a href="#"><span class="gray">TRY</span> 新土耳其里拉</a></li>
+                                <li><a href="#"><span class="gray">VND</span> 越南盾</a></li>
+                                <li><a href="#"><span class="gray">ZAR</span> 南非兰特</a></li>
+                            </ul>
+                            <span>其他货币</span>
+                        </div>
+
+                    </div>
+                </li>
+                <li><a href="#">APP下载</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">最近浏览<i class="fa fa-angle-down "></i></a>
+                    <div class="head-history">
+                        <ul>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                        </ul>
+
+                    </div>
+                    <i class="history-arrow"></i>
+                </li>
+                <li><a href="#">
+                    <em class="fa fa-shopping-cart"></em>
+                </a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="city-banner-fixed" v-show="cityTag">
+        <div class="city-banner-fixed-t">
+            <div class="city-layout">
+                <h1>台北</h1>
+            </div>
+        </div>
+
+        <div class="city-banner-fixed-b">
+            <div class="city-layout">
+                <ul>
+                    <li><a href="#">台北首页</a></li>
+                    <li><a href="#" class="active">景点门票 & 表演</a></li>
+                    <li><a href="#">一日游 & 小团游</a></li>
+                    <li><a href="#">特色活动 & 体验</a></li>
+                    <li><a href="#">当地交通 & 旅行服务</a></li>
+                    <li><a href="#">台湾火车票</a></li>
+                    <li><a href="#">WiFi＆SIM卡</a></li>
+                    <li><a href="#">地道美食</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--城市背景图-->
+    <div class="city-banner">
+        <div class="city-banner-addr">
+            <h1>台北</h1>
+            <a href="#">台湾 <i class="fa fa-long-arrow-right"></i></a>
+        </div>
+    </div>
+    <!--搜索-->
+    <div class="city-search">
+        <div class="city-layout">
+            <div class="city-search-menu">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="active">
+                                <i class="fa fa-map-marker"></i>
+                                <p>首页</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"><a href="#">
+                            <i class="fa fa-map-marker"></i>
+                            <p>首页</p>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#">
+                            <i class="fa fa-map-marker"></i>
+                            <p>首页</p>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#">
+                            <i class="fa fa-map-marker"></i>
+                            <p>首页</p>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#">
+                            <i class="fa fa-map-marker"></i>
+                            <p>首页</p>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#">
+                            <i class="fa fa-map-marker"></i>
+                            <p>首页</p>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#">
+                            <i class="fa fa-map-marker"></i>
+                            <p>首页</p>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#">
+                            <i class="fa fa-map-marker"></i>
+                            <p>首页</p>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#">
+                            <i class="fa fa-map-marker"></i>
+                            <p>首页</p>
+                        </a></div>
+                        <div class="swiper-slide"><a href="#">
+                            <i class="fa fa-map-marker"></i>
+                            <p>首页</p>
+                        </a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="city-main">
+        <div class="city-layout city-scenic">
+            <h2>景点门票 & 表演</h2>
+
+            <div class="city-scenic-main">
+                <div :class="{'scenic-left':true,'active':activityTag}">
+                    <div class="scenic-left-body">
+                        <h3>活动分类</h3>
+                        <el-tree
+                                :data="data"
+                                show-checkbox
+                                node-key="id"
+                                :default-expanded-keys="[1, 2]"
+                                :default-checked-keys=checkedKeys
+                                :props="defaultProps">
+                        </el-tree>
+                    </div>
+
+                </div>
+                <div class="scenic-right">
+                    <h3>找到19个活动</h3>
+                    <div class="scenic-right-search">
+                        <input type="text" placeholder="搜索符合筛选条件的结果">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="scenic-right-body">
+                        <ul>
+                            <li class="add-active-body" v-for="item in activityList">
+                                <a href="#">
+                                    <div class="active-img">
+                                        <i class="fa fa-map-marker"></i>
+                                        JR 列车
+                                    </div>
+                                    <div class="active-body-b">
+                                        <h3>JR PASS 全日本铁路通票（7 / 14 / 21日）</h3>
+                                        <p><span>★  4.8 &nbsp;&nbsp;</span>(6,978条评价) | 142K 人参加过</p>
+                                        <div>
+                                            <p class="old-price">￥ 91</p>
+                                            <p class="active-money">￥ 1,838 <i class="fa fa-flash"></i></p>
+                                            <p class="active-time">最早可预订日期：2019年8月13日</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="scenic-right-pagination">
+                            <el-pagination
+                                    @size-change="handleSizeChange"
+                                    @current-change="handleCurrentChange"
+                                    :current-page="currentPage1"
+                                    :page-sizes="[100, 200, 300, 400]"
+                                    :page-size="100"
+                                    layout="total, sizes, prev, pager, next, jumper"
+                                    :total="400">
+                            </el-pagination>
+                        </div>
+                        <!--                        /*精选攻略*/-->
+                        <div class="scenic-youji">
+                            <h3>精选攻略</h3>
+                            <div class="scenic-youji-items">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide youji-item" v-for="item in  youjiList" :key="item.id">
+                                            <a href="#">
+                                                <div class="youji-top"></div>
+                                                <div class="youji-bottom">
+                                                    <p>李梦：喜欢流浪，是因为还没找到留下来的地方 | KLOOK独家专访</p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!--    footer-->
+    <footer>
+        <div class="lk-layout">
+            <div class="foot-a">
+
+                <div>
+                    友情链接: <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i> <i class="fa fa-weixin"></i><i
+                        class="fa fa-youtube"></i>
+                </div>
+                <div class="foot-grid">
+                    <div>
+                        <span>最高可省60%，只有订阅用户才能享受到隐藏优惠</span>
+                        <p>点击「订阅」，即表示您同意我们的服务条款及隐私政策</p>
+                    </div>
+                    <div class="foot-search">
+                        <input type="text" placeholder="请输入邮箱以接收订阅信息">
+                        <a href="#">订阅</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="foot-border"></div>
+        <div class="lk-layout">
+            <div class="foot-b">
+                <p class="t12 copyright ">©2014-2019 Klook Travel Technology Limited. All Rights Reserved.<br>HK Travel
+                    Agent Licence: 354005.<br>SG
+                    Travel Agent Licence: 02851.<br>TW
+                    Travel Agent License: 甲
+                    03950.</p>
+                <ul>
+                    <li class="t_white">认识客路</li>
+                    <li><a href="/zh-CN/about/">关于客路</a></li>
+                    <li><a href="/zh-CN/partner/">合作伙伴</a></li>
+                    <li><a href="/zh-CN/careers/">加入我们</a></li>
+                </ul>
+                <ul>
+                    <li class="t_white">携手客路</li>
+                    <li><a href="https://merchant.klook.com/zh-CN/">商户登录</a></li>
+                    <li><a href="http://affiliate.klook.com/zh-CN/">联合营销</a></li>
+                    <li><a href="https://www.klook.com/zh-CN/agent/">同业交易</a></li>
+                </ul>
+                <ul>
+                    <li class="t_white">网站条款</li>
+                    <li><a href="/zh-CN/conditions/">使用条款</a></li>
+                    <li><a href="/zh-CN/policy/">隐私政策</a></li>
+                    <li><a href="/zh-CN/cookiepolicy/">Cookie政策</a></li>
+                </ul>
+                <div class="foot-paly">
+                    <a href="#">咨询客路</a>
+                    <h3>支付方式</h3>
+                    <p>
+                        <span class="i_alipay m_justify_list"></span>
+                        <span class="i_newMaster m_justify_list"></span>
+                        <span class="i_wechatpay m_justify_list"></span>
+                        <span class="i_newAE m_justify_list"></span>
+                        <span class="i_newVisa m_justify_list"></span>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="foot-border"></div>
+        <div class="lk-layout">
+            <div class="foot-c">
+                <p>
+                    粤ICP号备14100233号-1 地址：深圳市福田区天安科技创业园大厦A1002室 客服电话：400-194-9240
+                </p>
+            </div>
+        </div>
+
+    </footer>
+</div>
+
+<script src="./lib/swiper/js/swiper.min.js"></script>
+<script src="./js/vue.min.js"></script>
+<script src="./lib/element-ui/lib/index.js"></script>
+<script>
+
+    new Vue({
+        el: "#app",
+        data: {
+            category: false,
+            categorylist: [
+                {id: 1},
+                {id: 2},
+                {id: 3},
+                {id: 4},
+                {id: 5},
+                {id: 6},
+                {id: 7},
+                {id: 8},
+                {id: 9},
+                {id: 10},
+                {id: 11},
+                {id: 12},
+                {id: 13},
+                {id: 14},
+                {id: 15}
+            ],
+            youjiList: [
+                {id: 1},
+                {id: 2},
+                {id: 3},
+                {id: 4},
+                {id: 5},
+                {id: 6},
+                {id: 7},
+                {id: 8},
+            ],
+            activityList: [
+                {id: 1},
+                {id: 2},
+                {id: 3},
+                {id: 4},
+                {id: 5},
+                {id: 6},
+                {id: 7},
+                {id: 8},
+                {id: 9},
+                {id: 10},
+                {id: 11},
+                {id: 12},
+                {id: 13},
+                {id: 14},
+                {id: 15},
+                {id: 16},
+                {id: 17},
+                {id: 18},
+                {id: 19},
+                {id: 20},
+                {id: 21},
+                {id: 22},
+                {id: 23},
+                {id: 24}
+            ],
+            cityTag: false,
+            activityTag: false,
+            cityWeather: [
+                {id: 1},
+                {id: 2},
+                {id: 3},
+                {id: 4}
+            ],
+            cityAddress: [
+                {id: 1},
+                {id: 2},
+                {id: 3},
+                {id: 4},
+                {id: 5},
+                {id: 6},
+                {id: 7},
+                {id: 8},
+                {id: 9},
+                {id: 10},
+            ],
+
+            data: [{
+                id: 1,
+                label: '景点门票表演',
+                children: [{
+                    id: 4,
+                    label: '主题乐园'
+                }, {
+                    id: 5,
+                    label: '展览及装置艺术'
+                }, {
+                    id: 6,
+                    label: '特色景点'
+                }, {
+                    id: 7,
+                    label: '博物馆 & 艺术馆'
+                }]
+            }],
+            defaultProps: {
+                children: 'children',
+                label: 'label'
+            },
+            checkedKeys: [4, 5],
+            currentPage1: 1
+
+        },
+        created() {
+        },
+        methods: {
+            handleSizeChange(val) {
+                console.log(`每页 ${val} 条`);
+            },
+            handleCurrentChange(val) {
+                console.log(`当前页: ${val}`);
+            },
+            //百度地图
+
+            getScrolltopNum() {
+                let top = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset
+                if (top > 320) {
+                    this.cityTag = true;
+                    const aa = document.querySelector('.city-main').style.marginTop = '120px'
+                    // console.log(aa);
+                    if (top > 480) {
+                        this.activityTag = true
+                    } else {
+                        this.activityTag = false
+                    }
+
+                } else {
+                    this.activityTag = this.cityTag = false
+                    document.querySelector('.city-main').style.marginTop = '0'
+                }
+
+            }
+
+        },
+        mounted() {
+
+            var swiper = new Swiper('.city-search .swiper-container', {
+                slidesPerView: 7,
+                spaceBetween: 4,
+                freeMode: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+            window.addEventListener('scroll', this.getScrolltopNum)
+
+            new Swiper('.scenic-youji-items .swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 23,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        }
+    })
+
+
+</script>
+</body>
+</html>

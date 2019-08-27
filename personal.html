@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/lipis/css/flag-icon.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/personal.css">
+    <link rel="stylesheet" href="./css/foot.css">
+</head>
+<body>
+<div id="app">
+    <!--header-->
+    <header class="header-fixed">
+        <div class="header-logo">
+            <a href="/">客路</a>
+        </div>
+        <div class="header-search">
+            <input type="text" placeholder="搜索全球目的地 / 活动">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="header-right">
+            <ul class="header-menu">
+                <li>
+                    <a href="#">
+                    <span class="flag-icon flag-icon-cn">
+                    </span>
+                        <i class="fa fa-angle-down "></i>
+                    </a>
+                    <div class="country-items">
+                        <ul>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-AU">
+                                    <i class="flag-icon flag-icon-au"></i>
+                                    <span>English (Australia)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-ca"></i>
+                                    <span>English (Canada)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-hk"></i>
+                                    <span>English (Hong Kong)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-in"></i>
+                                    <span>English (India)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-my"></i>
+                                    <span>English (Malaysia)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-nz"></i>
+                                    <span>English (New Zealand)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-ph"></i>
+                                    <span>English (Philippines)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-si"></i>
+                                    <span>English (Singapore)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-us"></i>
+                                    <span>English (US)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-uk"></i>
+                                    <span>English (UK)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-it"></i>
+                                    <span>English (International)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-cn"></i>
+                                    <span>简体中文</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-hk"></i>
+                                    <span>繁體中文 (香港)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-tw"></i>
+                                    <span>繁體中文 (台灣)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-jp"></i>
+                                    <span>日本語</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-kr"></i>
+                                    <span>한국어</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-th"></i>
+                                    <span>ไทย</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-vn"></i>
+                                    <span>Tiếng Việt</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="t12 j_lang_val" data-value="en-CA">
+                                    <i class="flag-icon flag-icon-id"></i>
+                                    <span>Bahasa Indonesia</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <span>选择语言</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">CNY
+                        <i class="fa fa-angle-down "></i>
+                    </a>
+                    <div class="head-moneys">
+                        <div class="moneys-t">
+                            <ul class="money-items">
+                                <li><a href="#"><span class="gray">CNY</span>人民币</a></li>
+                                <li><a href="#"><span class="gray">HKD</span> 港币</a></li>
+                                <li><a href="#"><span class="gray">MYR</span> 林吉特</a></li>
+                                <li><a href="#"><span class="gray">TWD</span> 台币</a></li>
+                                <li><a href="#"><span class="gray">SGD</span> 新币</a></li>
+                                <li><a href="#"><span class="gray">USD</span> 美元</a></li>
+                                <li><a href="#"><span class="gray">KRW</span> 韩元</a></li>
+                            </ul>
+                            <span>推荐使用货币</span>
+                        </div>
+                        <div class="moneys-b">
+                            <ul class="money-items">
+                                <li><a href="#"><span class="gray">AED</span> 阿联酋迪拉姆</a></li>
+                                <li><a href="#"><span class="gray">AUD</span> 澳元</a></li>
+                                <li><a href="#"><span class="gray">CAD</span> 加拿大元</a></li>
+                                <li><a href="#"><span class="gray">CHF</span> 瑞士法郎</a></li>
+                                <li><a href="#"><span class="gray">DKK</span> 丹麦克朗</a></li>
+                                <li><a href="#"><span class="gray">EGP</span> 埃及镑</a></li>
+                                <li><a href="#"><span class="gray">EUR</span> 欧元</a></li>
+                                <li><a href="#"><span class="gray">FJD</span> 斐济元</a></li>
+                                <li><a href="#"><span class="gray">GBP</span> 英镑</a></li>
+                                <li><a href="#"><span class="gray">IDR</span> 印尼盾</a></li>
+                                <li><a href="#"><span class="gray">INR</span> 印度卢比</a></li>
+                                <li><a href="#"><span class="gray">ISK</span> 冰岛克朗</a></li>
+                                <li><a href="#"><span class="gray">JOD</span> 约旦第纳尔</a></li>
+                                <li><a href="#"><span class="gray">JPY</span> 日元</a></li>
+                                <li><a href="#"><span class="gray">KHR</span> 瑞尔</a></li>
+                                <li><a href="#"><span class="gray">LAK</span> 老挝基普</a></li>
+                                <li><a href="#"><span class="gray">LBP</span> 黎巴嫩镑</a></li>
+                                <li><a href="#"><span class="gray">MAD</span> 摩洛哥迪拉姆</a></li>
+                                <li><a href="#" class="moneys-b-t"><span class="gray">MGA</span> 马达加斯加阿里亚里</a></li>
+                                <li><a href="#"><span class="gray">MMK</span> 缅元</a></li>
+                                <li><a href="#"><span class="gray">MOP</span> 澳门元</a></li>
+                                <li><a href="#"><span class="gray">MUR</span> 毛里求斯卢比</a></li>
+                                <li><a href="#"><span class="gray">MXN</span> 墨西哥比索</a></li>
+                                <li><a href="#"><span class="gray">NOK</span> 挪威克朗</a></li>
+                                <li><a href="#"><span class="gray">NZD</span> 新西兰元</a></li>
+                                <li><a href="#"><span class="gray">OMR</span> 阿曼里亚尔</a></li>
+                                <li><a href="#"><span class="gray">PHP</span> 菲律宾比索</a></li>
+                                <li><a href="#"><span class="gray">QAR</span> 卡塔尔里亚尔</a></li>
+                                <li><a href="#"><span class="gray">RUB</span> 俄罗斯卢布</a></li>
+                                <li><a href="#"><span class="gray">SEK</span> 瑞典克朗</a></li>
+                                <li><a href="#"><span class="gray">THB</span> 泰铢</a></li>
+                                <li><a href="#"><span class="gray">TRY</span> 新土耳其里拉</a></li>
+                                <li><a href="#"><span class="gray">VND</span> 越南盾</a></li>
+                                <li><a href="#"><span class="gray">ZAR</span> 南非兰特</a></li>
+                            </ul>
+                            <span>其他货币</span>
+                        </div>
+
+                    </div>
+                </li>
+                <li><a href="#">APP下载</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">最近浏览<i class="fa fa-angle-down "></i></a>
+                    <div class="head-history">
+                        <ul>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                            <li><a href="#">
+                                <img src="./images/his1.jpg" alt="">
+                                <div>
+                                    <h3>越南下龙湾一日游</h3>
+                                    <p><span>★ 4.4</span> (1,622条评价)|22K 人参加过</p>
+                                    <p>¥ 304</p>
+                                    <p>¥ 247<i class="fa fa-flash"></i></p>
+                                    <p>最早可預訂日期：今日</p>
+                                </div>
+                            </a></li>
+                        </ul>
+
+                    </div>
+                    <i class="history-arrow"></i>
+                </li>
+                <li><a href="#">
+                    <em class="fa fa-shopping-cart"></em>
+                </a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--main-->
+    <div class="personal-main">
+        <div class="layout-container">
+            <!--        提示-->
+            <div class="personal-hint" v-show="isHint" @click="isHint=false">
+                <span>新增邮箱或手机号码作为登录方式，以增强账号安全性</span>
+                <a href="#">保护我的账号</a>
+                <i class="fa fa-close"></i>
+            </div>
+
+
+            <div class="personal-body">
+                <!--                左侧-->
+                <div class="personal-main-left">
+                    <div class="personal-left-info">
+                        <label for="active">
+                            <input type="file" id="active">
+                            <img src="./images/avatar.png" alt="">
+                            <div>
+                                <i class="fa fa-camera"></i>
+                            </div>
+                        </label>
+                        <h3>Klook用户</h3>
+                        <a href="#">编辑个人信息</a>
+                    </div>
+                    <!--                    优惠-->
+                    <div class="personal-left-discounts">
+                        <a href="#">
+                            <p>0</p>
+                            <span>可用优惠码</span>
+                        </a>
+                        <a href="#">
+                            <p>0</p>
+                            <span>积分</span>
+                        </a>
+                    </div>
+                    <!--                    菜单-->
+                    <div class="personal-left-menu">
+                        <ul>
+                            <li><a href="./personal.html" class="active"><i class="fa fa-drivers-license-o"></i><span>个人中心</span></a>
+                            </li>
+                            <li><a href="./order.html"><i class="fa fa-newspaper-o"></i><span>我的订单</span></a></li>
+                            <li><a href="./review.html"><i class="fa fa-newspaper-o"></i><span>我的评价</span></a></li>
+                            <li class="personal-left-card"><a href="./wish.html"><i
+                                    class="fa fa-heart-o"></i><span>心愿清单</span></a></li>
+                            <li><a href="./setting.html"><i class="fa fa-cog"></i><span>账户设置</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="h20"></div>
+                    <!--                    banner-->
+                    <div class="personal-left-banner">
+                        <h4>获取优惠</h4>
+                        <p>每成功邀请好友一次可获取¥20</p>
+                        <span>查看详情</span>
+                    </div>
+
+                </div>
+                <!--                右侧-->
+                <div class="personal-main-right">
+                    <div class="personal-right-top">
+                        <div class="empty-img"></div>
+                        <p>下一站去哪？请选择您的心仪目的地立即预订吧！</p>
+                        <a class="personal-index" href="/index.html">返回首页</a>
+
+                    </div>
+
+                    <div class="personal-right-bottom">
+                        <h1>热门目的地</h1>
+                        <ul>
+                            <li><a href="#">台北</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                        <div>探索全部目的地</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="lk-layout">
+            <div class="foot-a">
+
+                <div>
+                    友情链接: <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i> <i class="fa fa-weixin"></i><i
+                        class="fa fa-youtube"></i>
+                </div>
+                <div class="foot-grid">
+                    <div>
+                        <span>最高可省60%，只有订阅用户才能享受到隐藏优惠</span>
+                        <p>点击「订阅」，即表示您同意我们的服务条款及隐私政策</p>
+                    </div>
+                    <div class="foot-search">
+                        <input type="text" placeholder="请输入邮箱以接收订阅信息">
+                        <a href="#">订阅</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="foot-border"></div>
+        <div class="lk-layout">
+            <div class="foot-b">
+                <p class="t12 copyright ">©2014-2019 Klook Travel Technology Limited. All Rights Reserved.<br>HK Travel
+                    Agent Licence: 354005.<br>SG
+                    Travel Agent Licence: 02851.<br>TW
+                    Travel Agent License: 甲
+                    03950.</p>
+                <ul>
+                    <li class="t_white">认识客路</li>
+                    <li><a href="/zh-CN/about/">关于客路</a></li>
+                    <li><a href="/zh-CN/partner/">合作伙伴</a></li>
+                    <li><a href="/zh-CN/careers/">加入我们</a></li>
+                </ul>
+                <ul>
+                    <li class="t_white">携手客路</li>
+                    <li><a href="https://merchant.klook.com/zh-CN/">商户登录</a></li>
+                    <li><a href="http://affiliate.klook.com/zh-CN/">联合营销</a></li>
+                    <li><a href="https://www.klook.com/zh-CN/agent/">同业交易</a></li>
+                </ul>
+                <ul>
+                    <li class="t_white">网站条款</li>
+                    <li><a href="/zh-CN/conditions/">使用条款</a></li>
+                    <li><a href="/zh-CN/policy/">隐私政策</a></li>
+                    <li><a href="/zh-CN/cookiepolicy/">Cookie政策</a></li>
+                </ul>
+                <div class="foot-paly">
+                    <a href="#">咨询客路</a>
+                    <h3>支付方式</h3>
+                    <p>
+                        <span class="i_alipay m_justify_list"></span>
+                        <span class="i_newMaster m_justify_list"></span>
+                        <span class="i_wechatpay m_justify_list"></span>
+                        <span class="i_newAE m_justify_list"></span>
+                        <span class="i_newVisa m_justify_list"></span>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="foot-border"></div>
+        <div class="lk-layout">
+            <div class="foot-c">
+                <p>
+                    粤ICP号备14100233号-1 地址：深圳市福田区天安科技创业园大厦A1002室 客服电话：400-194-9240
+                </p>
+            </div>
+        </div>
+
+    </footer>
+</div>
+<script src="./js/vue.min.js"></script>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            isHint: true
+        }
+    })
+</script>
+</body>
+</html>

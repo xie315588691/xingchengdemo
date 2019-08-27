@@ -1,0 +1,193 @@
+/*footer*/
+footer {
+    background-color: #333;
+}
+.lk-layout{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.foot-a {
+    height: 100px;
+    box-sizing: border-box;
+    padding: 30px 0;
+    color: #888;
+    font-size: 14px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    /*border-bottom: 1px solid #999;*/
+}
+
+.foot-a i {
+    font-size: 28px;
+    margin: 0 25px;
+}
+
+.foot-a span {
+    line-height: 16px;
+    font-size: 14px;
+    display: block;
+    color: #fff;
+}
+
+.foot-a p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 8px;
+    color: #999;
+}
+
+.foot-grid {
+    display: flex;
+}
+
+.foot-grid input {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    padding: 7px 12px;
+    width: 259px;
+    height: 42px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.foot-grid input:hover, .foot-grid input:focus {
+    border: 1px solid #f5a263;
+}
+
+.foot-grid a {
+    display: block;
+    width: 101px;
+    height: 42px;
+    background-color: #98c544;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.foot-search {
+    display: flex;
+    margin-left: 30px;
+}
+
+.foot-border {
+    width: 100%;
+    border-bottom: 1px solid #999;
+
+}
+
+/*foot-b*/
+.foot-b {
+    height: 248px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #888;
+    padding: 42px 0 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-b p {
+    width: 220px;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+
+.foot-b li {
+    line-height: 17px;
+    margin-bottom: 8px;
+
+}
+
+.foot-b li a {
+    color: #888;
+}
+
+.foot-b li a:hover {
+    color: #fff;
+}
+
+.foot-b .t_white {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.foot-paly {
+    width: 214px;
+    height: 194px;
+    box-sizing: border-box;
+}
+
+.foot-paly a {
+    display: block;
+    color: #888;
+    border: 1px solid #888;
+    height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 38px;
+    margin-bottom: 30px;
+}
+
+.foot-paly a:hover {
+    color: #fff;
+    border-color: #fff;
+
+}
+
+.foot-paly h3 {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+}
+
+.foot-paly p {
+    width: 100%;
+
+}
+
+.foot-paly p span {
+    display: inline-block;
+    background-image: url(../images/sprites-icon-05eea842e1.png);
+    margin-right: 10px;
+    margin-bottom: 18px;
+}
+
+.i_alipay {
+    background-position: 0px -806px;
+    width: 40px;
+    height: 24px;
+}
+
+.i_newMaster{
+    background-position: 0px -574px;
+    width: 40px;
+    height: 24px;
+}
+.i_wechatpay{
+    background-position: 0px -632px;
+    width: 40px;
+    height: 24px;
+}
+.i_newAE{
+    background-position: 0px -603px;
+    width: 40px;
+    height: 24px;
+}
+.i_newVisa{
+    background-position: 0px -835px;
+    width: 40px;
+    height: 25px;
+}
+/*foot-c*/
+.foot-c {
+    height: 46px;
+}
+
+.foot-c p {
+    color: #888;
+    line-height: 46px;
+    text-align: center;
+}

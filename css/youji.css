@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+.banner-fixed {
+    position: relative;
+}
+
+.youji-banner {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/yoji-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 50px;
+}
+
+.youji-banner-title{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.youji-banner-title h1{
+    font-size: 56px;
+    font-weight: 700;
+    width: 1160px;
+    line-height: 72px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.youji-banner-title p{
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+
+/*标题*/
+.youji-title{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 50px;
+}
+.youji-title i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #4985e6;
+    border-right: 1px solid #4985e6;
+    transform: rotate(45deg);
+}
+.youji-title span{
+    color: #b2b2b2;
+}
+.youji-body{
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+
+
+
